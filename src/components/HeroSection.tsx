@@ -39,15 +39,15 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <div className="max-w-4xl mx-auto space-y-8">
+        <div className="max-w-4xl mx-auto space-y-8 animate-fade-in-up">
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+            <h1 className="text-5xl md:text-7xl font-playfair font-bold tracking-tight drop-shadow-lg">
               Smart Tourist Safety
             </h1>
-            <h2 className="text-2xl md:text-3xl font-medium">
+            <h2 className="text-2xl md:text-3xl font-medium text-white/95">
               For the Seven Sisters of India
             </h2>
-            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
               Experience Northeast India with confidence. Our AI-powered safety platform 
               provides real-time protection, anonymous reporting, and secure digital identity 
               for tourists exploring the beautiful Seven Sisters states.

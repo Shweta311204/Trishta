@@ -133,7 +133,25 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-inter antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Enhanced typography classes */
+  .heading-display {
+    @apply font-playfair font-bold tracking-tight;
+  }
+
+  .heading-primary {
+    @apply font-inter font-bold tracking-tight;
+  }
+
+  .text-enhanced {
+    @apply leading-relaxed;
+    text-rendering: optimizeLegibility;
   }
 
   /* Custom scrollbar */

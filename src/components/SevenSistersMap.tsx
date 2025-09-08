@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { MapPin, Star, Shield, Camera } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -75,6 +76,7 @@ const statesData = {
 const SevenSistersMap = () => {
   const [selectedState, setSelectedState] = useState<string | null>(null);
   const [hoveredState, setHoveredState] = useState<string | null>(null);
+  const navigate = useNavigate();
 
   const getSafetyColor = (score: number) => {
     if (score >= 85) return "success";
@@ -90,9 +92,9 @@ const SevenSistersMap = () => {
 
   return (
     <div className="w-full max-w-6xl mx-auto p-6">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold mb-2">Seven Sisters of India</h2>
-        <p className="text-muted-foreground">Interactive safety and tourism map of Northeast India</p>
+      <div className="text-center mb-12 animate-fade-in-up">
+        <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-4 text-foreground">Seven Sisters of India</h2>
+        <p className="text-muted-foreground text-lg leading-relaxed">Interactive safety and tourism map of Northeast India</p>
       </div>
 
       <div className="relative">
@@ -206,8 +208,12 @@ const SevenSistersMap = () => {
                   </div>
                 </div>
                 <div className="flex gap-2 pt-4">
-                  <Button variant="hero" className="flex-1">
-                    Plan Visit
+                  <Button 
+                    variant="hero" 
+                    className="flex-1"
+                    onClick={() => navigate(`/state/${selectedState}`)}
+                  >
+                    Explore Attractions
                   </Button>
                   <Button variant="outline" className="flex-1">
                     Safety Report

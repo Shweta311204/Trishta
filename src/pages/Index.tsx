@@ -24,7 +24,10 @@ const Index = () => {
       {/* Stats Section */}
       <section className="py-16 bg-muted/50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Platform Statistics</h2>
+          <div className="text-center mb-12 animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-4">Platform Statistics</h2>
+            <p className="text-muted-foreground text-lg leading-relaxed">Real-time insights into tourist safety across Northeast India</p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {stats.map((stat, index) => (
               <Card key={index} className="text-center gradient-card shadow-card">
@@ -56,9 +59,9 @@ const Index = () => {
       {/* Safety Features Section */}
       <section id="report" className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Safety & Security Features</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
+          <div className="text-center mb-12 animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-4">Safety & Security Features</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
               Comprehensive safety tools designed specifically for tourists exploring the Seven Sisters of India
             </p>
           </div>
@@ -69,9 +72,9 @@ const Index = () => {
       {/* About Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-3xl font-bold">About NE SafeTour</h2>
-            <p className="text-lg text-muted-foreground">
+          <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in-up">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold">About NE SafeTour</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
               NE SafeTour is the first comprehensive tourist safety platform designed specifically 
               for the Seven Sisters of India. Our innovative blend of blockchain technology, 
               AI-powered monitoring, and community-driven reporting ensures that every visitor 
