@@ -1,6 +1,7 @@
 import { MapPin, Shield, Users, Zap } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "./ui/button";
+import { Card, CardContent } from "./ui/card";
+// @ts-ignore
 import heroImage from "@/assets/northeast-hero.jpg";
 
 const HeroSection = () => {
