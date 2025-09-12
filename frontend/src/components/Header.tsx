@@ -19,12 +19,12 @@ const navItems: NavItem[] = [
 
 const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white backdrop-blur supports-[backdrop-filter]:bg-white/60">
+    <header className="sticky top-0 z-50 w-full border-b bg-white backdrop-blur supports-[backdrop-filter]:bg-white/60 relative">
       <div className="container mx-auto flex h-16 items-center px-4">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <h1 className="text-4xl font-bold text-cyan-600">Trishta</h1>
-          <MyIcon className="h-8 w-8 text-cyan-500" />
+        <div className="flex items-center space-x-0">
+            <MyIcon className="h-28 w-28 text-cyan-500" /> {/* Adjust size as needed */}
+            <h1 className="text-3xl font-bold text-cyan-600">Trishta</h1>
         </div>
 
         {/* Desktop Navigation */}

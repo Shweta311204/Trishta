@@ -110,7 +110,7 @@ const SevenSistersMap = () => {
       </div>
 
       <div className="relative">
-        <div className="relative w-full rounded-2xl border-2 border-border overflow-hidden shadow-elegant" style={{height: 500}}>
+        <div className="relative z-0 w-full rounded-2xl border-2 border-border overflow-hidden shadow-elegant" style={{height: 500}}>
           <MapContainer center={center} zoom={6} style={{ height: "100%", width: "100%" }}>
             <TileLayer
               attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
