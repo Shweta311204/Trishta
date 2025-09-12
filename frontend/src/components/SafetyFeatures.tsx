@@ -74,7 +74,7 @@ const SafetyFeatures = () => {
               </p>
             </div>
           ) : (
-            <Button onClick={generateDigitalId} variant="hero" className="w-full">
+            <Button onClick={generateDigitalId} variant="outline" className="w-full">
               Generate Secure ID
             </Button>
           )}
@@ -174,10 +174,6 @@ const SafetyFeatures = () => {
             <Button variant="outline" size="sm" className="w-full">
               <Phone className="h-4 w-4 mr-2" />
               Emergency: 112
-            </Button>
-            <Button variant="outline" size="sm" className="w-full">
-              <Users className="h-4 w-4 mr-2" />
-              Find Nearby Tourists
             </Button>
           </div>
         </CardContent>
