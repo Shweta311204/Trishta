@@ -22,9 +22,9 @@ const Header: React.FC = () => {
     <header className="sticky top-0 z-50 w-full border-b bg-white backdrop-blur supports-[backdrop-filter]:bg-white/60 relative">
       <div className="container mx-auto flex h-16 items-center px-4">
         {/* Logo */}
-        <div className="flex items-center space-x-0">
-            <MyIcon className="h-28 w-28 text-cyan-500" /> {/* Adjust size as needed */}
-            <h1 className="text-3xl font-bold text-cyan-600">Trishta</h1>
+        <div className="flex items-center">
+            <MyIcon className="h-28 w-28 mt-3 text-cyan-500" /> {/* Adjust size as needed */}
+            <h1 className="text-4xl font-bold text-cyan-600 -ml-6 -mt-1">Trishta</h1>
         </div>
 
         {/* Desktop Navigation */}
