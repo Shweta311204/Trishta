@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="Trishta/frontend/src/assets/Tirshta.svg" alt="Trishta Logo" width="150"/>
+  <img src="Tirshta-removebg-preview.png" alt="Trishta Logo" width="150"/>
   <h1>Trishta</h1>
   <p><strong>Your trusted companion for safe and informed travel throughout Northeast India.</strong></p>
   
