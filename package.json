@@ -1,9 +1,17 @@
 {
-  "devDependencies": {
-    "@types/react": "^19.1.12"
+  "name": "my-vite-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "vite build"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.12",
+    "vite": "^4.4.9"
   }
 }
+
+
